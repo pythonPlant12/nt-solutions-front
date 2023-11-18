@@ -1,56 +1,35 @@
-<script >
-  export default {
-    data () {
-      return {
-        colors: [
-          'green',
-          'secondary',
-          'yellow darken-4',
-          'red lighten-2',
-          'orange darken-1',
-        ],
-        slides: [
-          'First',
-          'Second',
-          'Third',
-          'Fourth',
-          'Fifth',
-        ],
+<script>
+export default {
+  data() {
+    return {
+      slides: [
+        {
+        src: "https://github.com/pythonPlant12/vuetify/blob/main/assets/css/videos/carousel-1.mp4",
       }
-    },
-  }
+      ],
+    };
+  },
+};
 </script>
+
 <template>
-    <v-card
-    elevation="24"
-    max-width="444"
-    class="mx-auto"
-  >
+  <div class="main-div">
     <v-carousel
-      :continuous="false"
-      :show-arrows="false"
+      :continuous="true"
+      :show-arrows="true"
       hide-delimiter-background
       delimiter-icon="mdi-square"
-      height="300"
+      height="50rem"
     >
-      <v-carousel-item
-        v-for="(slide, i) in slides"
-        :key="i"
-      >
-        <v-sheet
-          :color="colors[i]"
-          height="100%"
-          tile
-        >
-          <div class="d-flex fill-height justify-center align-center">
-            <div class="text-h2">
-              {{ slide }} Slide
-            </div>
-          </div>
-        </v-sheet>
+      <v-carousel-item v-for="(slide, i) in slides" :key="i">
+        <video width="100%" height="100%" controls>
+          <source :src="slide.src" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </v-carousel-item>
     </v-carousel>
-  </v-card>
+  </div>
 </template>
+
 <style>
 </style>
