@@ -127,13 +127,13 @@ header {
 	align-self: center;
 	width: 1.6rem;
 	height: 4.4rem;
-	background: url("~/assets/css/icons/apple.svg") center no-repeat;
+	background: url("~/css/icons/apple.svg") center no-repeat;
 }
 
 .nav-link-search {
 	width: 1.6rem;
 	height: 4.4rem;
-	background: url("~/assets/css/icons/search.svg") center no-repeat;
+	background: url("~/css/icons/search.svg") center no-repeat;
 }
 
 .nav-link-bag {
@@ -141,7 +141,7 @@ header {
 	align-self: center;
 	width: 1.4rem;
 	height: 4.4rem;
-	background: url("~/assets/css/icons/bag.svg") center no-repeat;
+	background: url("~/css/icons/bag.svg") center no-repeat;
 }
 
 @media screen and (max-width: 1068px) {
