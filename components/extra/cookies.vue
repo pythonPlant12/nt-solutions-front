@@ -1,6 +1,7 @@
 <template>
 	<!-- ? COOKIES BANNER -->
 	<v-banner
+		v-if="cookiesNoAceptadas"
 		class="cookies"
 		avatar="https://cdn.vuetifyjs.com/docs/images/logos/v.svg"
 		stacked
@@ -22,7 +23,7 @@
 				<template v-slot:activator="{ props }">
 					<v-btn
 						class="text-none"
-						color="blue-darken-4"
+						color="orange-darken-4"
 						rounded="0"
 						variant="outlined"
 						v-bind="props"
@@ -55,7 +56,7 @@
 						<v-switch
 							v-model="performance"
 							:label="performance ? 'On' : 'Off'"
-							color="blue-darken-4"
+							color="orange-darken-4"
 							density="compact"
 							hide-details
 							inline
@@ -74,7 +75,7 @@
 						<v-switch
 							v-model="advertising"
 							:label="advertising ? 'On' : 'Off'"
-							color="blue-darken-4"
+							color="orange-darken-4"
 							density="compact"
 							hide-details
 							inline
@@ -94,7 +95,7 @@
 					<v-card-actions class="justify-center px-6 py-3">
 						<v-btn
 							class="flex-grow-1 text-none"
-							color="blue-darken-4"
+							color="orange-darken-4"
 							rounded="0"
 							variant="plain"
 							@click="dialog = false"
@@ -104,7 +105,7 @@
 
 						<v-btn
 							class="text-white flex-grow-1 text-none"
-							color="blue-darken-4"
+							color="orange-darken-4"
 							rounded="0"
 							variant="flat"
 							@click="dialog = false"
@@ -117,9 +118,10 @@
 
 			<v-btn
 				class="text-none ms-4 text-white"
-				color="blue-darken-4"
+				color="orange-darken-4"
 				rounded="0"
 				variant="flat"
+				@click="aceptarCookies()"
 			>
 				Accept Cookies
 			</v-btn>
@@ -130,6 +132,7 @@
 <style>
 .cookies {
 	position: fixed !important;
+	border-top: 1px solid gray !important;
 	bottom: 0rem;
 	z-index: 1;
 }
@@ -142,7 +145,13 @@ export default {
 			dialog: false,
 			advertising: true,
 			performance: true,
+			cookiesNoAceptadas: true,
 		};
+	},
+	methods: {
+		aceptarCookies() {
+			this.cookiesNoAceptadas = false;
+		},
 	},
 };
 </script>

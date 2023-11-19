@@ -24,7 +24,7 @@
 	</div>
 	<!-- ? Here I will insert a component which is in another folder, in order to provide path I should do <folder>-<component> -->
 	<extra-Cookies />
-	<div class="second-main-page"></div>
+	<mainPage-secondScreen />
 
 </template>
 
@@ -51,7 +51,7 @@
 	font-size: 4rem;
 	font-weight: bold;
 	padding: 0.5rem;
-	background-color: rgba(106, 106, 106, 0.514);
+	background-color: rgba(255, 128, 0, 0.514);
 	opacity: 0;
 	animation: tituloApareciendo 3s forwards;
 }

@@ -32,49 +32,73 @@
 					</li>
 
 					<li class="nav-item">
-						<a href="#" class="nav-link nav-link-mobile">Mac</a>
+						<nuxt-link to="/" class="nav-link nav-link-mobile"
+							><v-btn :color="empresa" append-icon="mdi mdi-domain" size="large" variant="text">Empresa</v-btn></nuxt-link
+						>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link nav-link-mobile">iPad</a>
+						<nuxt-link to="/servicios" class="nav-link nav-link-mobile"
+							><v-btn :color="servicios" append-icon="mdi mdi-database-cog" size="large" variant="text">Servicios</v-btn></nuxt-link
+						>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link nav-link-mobile">iPhone</a>
+						<nuxt-link to="/tecnologias" class="nav-link nav-link-mobile"
+							><v-btn :color="tecnologias" append-icon="mdi mdi-wifi-settings" size="large" variant="text">Tecnologías</v-btn></nuxt-link
+						>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link nav-link-mobile">Watch</a>
+						<nuxt-link to="/sobre-nosotros" class="nav-link nav-link-mobile"
+							><v-btn :color="sobreNosotros" append-icon="mdi mdi-information-variant" size="large" variant="text">Sobre Nosotros</v-btn></nuxt-link
+						>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link nav-link-mobile">TV</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link nav-link-mobile">Support</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link nav-link-search"></a>
-					</li>
-					<li class="nav-item nav-item-hidden">
-						<a href="#" class="nav-link nav-link-bag"></a>
+						<nuxt-link to="/contacto" class="nav-link nav-link-mobile">
+							<v-btn :color="contacto" append-icon="mdi mdi-account-box-outline" variant="text" size="large" >Contacto</v-btn>
+						</nuxt-link>
 					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<div class="mt-16">
-	<slot />
-</div>
+		<slot />
+	</div>
 	<footer>
 		<div class="footer footer-main">
 			<div class="footer footer-div">
-					<v-btn
-					  v-for="icon in icons"
-					  :key="icon"
-					  class="mx-4"
-					  :icon="icon"
-					  variant="text"
-					></v-btn>
-				  </div>
+				<v-btn
+					v-for="icon in icons"
+					:key="icon"
+					class="mx-4"
+					:icon="icon"
+					variant="text"
+				></v-btn>
+			</div>
 			<div class="footer footer-div">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium vitae fuga veniam, delectus minus facilis veritatis ipsum nisi quibusdam, molestias pariatur illo facere dolorem dignissimos beatae libero odio tenetur totam! Temporibus atque consequuntur quaerat vitae ab eligendi cumque quos ipsa doloribus, aperiam quis at placeat et harum nisi vero odit incidunt numquam dolor, autem maxime possimus mollitia deleniti non. Ipsum odio corporis a veniam vel dolor, pariatur ex quia commodi consectetur illum quod fugit ducimus deserunt officia quam quae nihil voluptas aut distinctio rem, sed harum unde? Cumque quibusdam sequi atque distinctio. Ullam ratione eligendi ipsa asperiores voluptate repudiandae numquam explicabo beatae iusto incidunt sint, dolorum voluptatibus. Hic aliquid consequuntur iste ab, obcaecati, molestiae doloremque laborum quidem error vitae, accusamus facere porro at eos quas eum et inventore repudiandae reprehenderit pariatur. Corporis, dolorum voluptatem incidunt quas ut accusamus magnam magni rerum illum cupiditate laboriosam repudiandae aliquid, neque architecto enim? Aliquid quibusdam dicta nisi temporibus quisquam facere cumque aspernatur eos quis. Asperiores molestiae nam commodi minus aliquam dolore sunt, ex numquam ipsa harum nisi aspernatur, perferendis qui enim veniam, officia delectus ad consectetur quos excepturi cum sint. Reprehenderit minus temporibus, expedita id accusamus vero sapiente a aliquid natus qui eligendi et.</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+					vitae fuga veniam, delectus minus facilis veritatis ipsum nisi
+					quibusdam, molestias pariatur illo facere dolorem dignissimos beatae
+					libero odio tenetur totam! Temporibus atque consequuntur quaerat vitae
+					ab eligendi cumque quos ipsa doloribus, aperiam quis at placeat et
+					harum nisi vero odit incidunt numquam dolor, autem maxime possimus
+					mollitia deleniti non. Ipsum odio corporis a veniam vel dolor,
+					pariatur ex quia commodi consectetur illum quod fugit ducimus deserunt
+					officia quam quae nihil voluptas aut distinctio rem, sed harum unde?
+					Cumque quibusdam sequi atque distinctio. Ullam ratione eligendi ipsa
+					asperiores voluptate repudiandae numquam explicabo beatae iusto
+					incidunt sint, dolorum voluptatibus. Hic aliquid consequuntur iste ab,
+					obcaecati, molestiae doloremque laborum quidem error vitae, accusamus
+					facere porro at eos quas eum et inventore repudiandae reprehenderit
+					pariatur. Corporis, dolorum voluptatem incidunt quas ut accusamus
+					magnam magni rerum illum cupiditate laboriosam repudiandae aliquid,
+					neque architecto enim? Aliquid quibusdam dicta nisi temporibus
+					quisquam facere cumque aspernatur eos quis. Asperiores molestiae nam
+					commodi minus aliquam dolore sunt, ex numquam ipsa harum nisi
+					aspernatur, perferendis qui enim veniam, officia delectus ad
+					consectetur quos excepturi cum sint. Reprehenderit minus temporibus,
+					expedita id accusamus vero sapiente a aliquid natus qui eligendi et.
+				</p>
 			</div>
 		</div>
 	</footer>
@@ -176,7 +200,7 @@ header {
 }
 
 /* ! CSS Styles for PHONE (Small Screen ) */
-@media screen and (max-width: 735px) {
+@media screen and (max-width: 1100px) {
 	header {
 		height: 4.8rem;
 		transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1),
@@ -376,8 +400,6 @@ header {
 .main-div {
 	height: 100dvh;
 }
-
-
 </style>
 <script>
 export default {
@@ -389,13 +411,39 @@ export default {
 		});
 	},
 	data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
-
+		icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+	}),
+	computed: {
+		empresa() {
+			const currentPath = this.$route.path;
+			if (currentPath === "/") {
+				return "orange"
+			}
+		},
+		servicios() {
+			const currentPath = this.$route.path;
+			if (currentPath === "/servicios") {
+				return "orange"
+			}
+		},
+		tecnologias() {
+			const currentPath = this.$route.path;
+			if (currentPath === "/tecnologias") {
+				return "orange"
+			}
+		},
+		sobreNosotros() {
+			const currentPath = this.$route.path;
+			if (currentPath === "/sobre-nosotros") {
+				return "orange"
+			}
+		},
+		contacto() {
+			const currentPath = this.$route.path;
+			if (currentPath === "/contacto") {
+				return "orange"
+			}
+		}
+	}
 };
 </script>
