@@ -15,9 +15,16 @@
 				:src="slide.image"
 				cover
 			>
-				<div class="heading-carousel">
-					<h1 class="heading-carousel-title">{{ slide.title }}</h1>
-					<p class="heading-carousel-subtitle">{{ slide.subtitle }}</p>
+				<div class="carousel-items">
+					<div class="heading-carousel">
+						<h1 class="heading-carousel-title">{{ slide.title }}</h1>
+						<p class="heading-carousel-subtitle">{{ slide.subtitle }}</p>
+					</div>
+				</div>
+				<div class="carousel-button">
+					<v-btn stacked variant="flat" prepend-icon="$vuetify" elevation="24" size="x-large" color="orange">
+						Conocer más
+					</v-btn>
 				</div>
 			</v-carousel-item>
 		</v-carousel>
@@ -25,7 +32,6 @@
 	<!-- ? Here I will insert a component which is in another folder, in order to provide path I should do <folder>-<component> -->
 	<extra-Cookies />
 	<mainPage-secondScreen />
-
 </template>
 
 <!-- ! STYLE -->
@@ -34,10 +40,16 @@
 .main-div {
 	top: 5rem;
 }
-
-.heading-carousel {
+.carousel-items {
+	display: flex;
+	flex-direction: column;
+	margin-left: 6rem;
+	align-content: center;
+	justify-content: center;
 	position: relative;
-	left: 10rem;
+	top: 20%;
+}
+.heading-carousel {
 	margin-right: 2rem;
 	color: white;
 	top: 20%;
@@ -46,8 +58,9 @@
 
 .heading-carousel-title {
 	position: relative;
-	width: 60%;
+	display: flex;
 	min-width: 35rem;
+	max-width: 60%;
 	font-size: 4rem;
 	font-weight: bold;
 	padding: 0.5rem;
@@ -69,6 +82,16 @@
 	animation: subtituloApareciendo 1s forwards 3s;
 }
 
+.carousel-button {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	/* This helps me to always maintain the button on the center */
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	animation: botonApareciendo 2s forwards;
+}
+
 /* Animations */
 
 @keyframes tituloApareciendo {
@@ -80,6 +103,24 @@
 	}
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes botonApareciendo {
+	20% {
+		opacity: 0;
+		transform: scale(0);
+		transform: translate(-50%, -50%);
+	}
+	80% {
+		transform: scale(1.5);
+		transform: translate(-50%, -50%);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+		transform: translate(-50%, -50%);
+
 	}
 }
 
@@ -95,14 +136,14 @@
 /* Screen sizes */
 
 @media screen and (max-width: 680px) {
-	.heading-carousel {
-		top: 10%;
-		width: fit-content;
+	.carousel-items {
+		top: 0%;
+		margin: 1.5rem 0rem;
 	}
 
 	.heading-carousel-title {
-		width: fit-content;
-		min-width: auto;
+		min-width: 90%;
+		max-width: auto;
 		padding: 5rem 2rem;
 		height: 20rem;
 		font-size: 1.6rem;
@@ -117,8 +158,6 @@
 		left: 0rem;
 	}
 }
-
-
 </style>
 
 <!-- ! TYPESCRIPT -->
