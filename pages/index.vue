@@ -22,7 +22,7 @@
 					</div>
 				</div>
 				<div class="carousel-button">
-					<v-btn stacked variant="flat" prepend-icon="$vuetify" elevation="24" size="x-large" color="orange">
+					<v-btn @click="moverAlSegundoElemento()" stacked variant="flat" prepend-icon="$vuetify" elevation="24" size="x-large" color="orange">
 						Conocer más
 					</v-btn>
 				</div>
@@ -31,7 +31,9 @@
 	</div>
 	<!-- ? Here I will insert a component which is in another folder, in order to provide path I should do <folder>-<component> -->
 	<extra-Cookies />
-	<mainPage-secondScreen />
+	<div id="segundoElementoHtml">
+		<mainPage-secondScreen />
+	</div>
 </template>
 
 <!-- ! STYLE -->
@@ -89,7 +91,7 @@
 	/* This helps me to always maintain the button on the center */
 	transform: translate(-50%, -50%);
 	opacity: 0;
-	animation: botonApareciendo 2s forwards;
+	animation: botonApareciendo 2s forwards, botonMoviendose 2s infinite 3s;
 }
 
 /* Animations */
@@ -117,13 +119,24 @@
 		transform: translate(-50%, -50%);
 	}
 	100% {
-		opacity: 1;
+		opacity: 0.8;
 		transform: scale(1);
 		transform: translate(-50%, -50%);
 
 	}
 }
 
+@keyframes botonMoviendose {
+	0% {
+		transform: translate(-50%, -50%);
+	}
+	50% {
+		transform: translate(-50%, -60%);
+	}
+	100% {
+		transform: translate(-50%, -50%);
+	}
+}
 @keyframes subtituloApareciendo {
 	from {
 		opacity: 0;
@@ -149,7 +162,7 @@
 		font-size: 1.6rem;
 	}
 	.heading-carousel-subtitle {
-		margin-top: 2rem;
+		margin-top: 0rem;
 		font-size: 1.15rem;
 	}
 
@@ -163,6 +176,13 @@
 <!-- ! TYPESCRIPT -->
 
 <script>
+import gsap from 'gsap';
+import ScrollToPlugin from 'gsap/ScrollToPlugin'; // Import the ScrollToPlugin
+
+
+// Register the plugin
+gsap.registerPlugin(ScrollToPlugin);
+
 export default {
 	data() {
 		return {
@@ -187,5 +207,16 @@ export default {
 			headings: ["hey", "hello"],
 		};
 	},
+	methods: {
+		moverAlSegundoElemento() {
+			// const segundoElemento = this.$refs.segundoElementoHtml;
+			// Utilizando $refs accedemos al elemento html,
+			// smoother.scrollTo(segundoElemento)
+			gsap.to(window, {
+				duration: 1,
+				scrollTo: { y: "#segundoElementoHtml"}
+			})
+		}	
+	}
 };
 </script>

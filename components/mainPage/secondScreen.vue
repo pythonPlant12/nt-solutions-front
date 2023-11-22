@@ -8,7 +8,7 @@
     width="100%"
   >
     <div>
-      <h2 class="titulo text-h2 font-weight-black text-orange mt-16">
+      <h2 class="titulo text-h2 font-weight-black text-orange">
         Empresa en un mundo digital
       </h2>
 
@@ -20,7 +20,7 @@
         valoras la excelencia en la presencia digital de tu negocio. En nuestra plataforma, te ofrecemos no solo servicios de diseño web vanguardistas, sino también soluciones tecnológicas personalizadas para potenciar el rendimiento de tu empresa. Desde la implementación de bases de datos hasta la creación de portales especializados, nuestro compromiso es impulsar tu éxito en línea. Con enfoque en el posicionamiento web y SEO, nos esforzamos por llevar tu presencia digital a nuevas alturas. ¡Descubre cómo podemos transformar tu visión en una realidad digital impactante y efectiva!
       </p>
 
-      <v-btn color="orange" size="x-large" elevation="4">Descubrir</v-btn>
+      <v-btn href="/servicios" color="orange" size="x-large" elevation="4">Descubrir</v-btn>
     </div>
   </v-sheet>
     <div class="main">
