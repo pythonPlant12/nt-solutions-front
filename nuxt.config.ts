@@ -11,7 +11,8 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
-    '@hypernym/nuxt-gsap'
+    '@hypernym/nuxt-gsap',
+    '@nuxtjs/google-fonts'
     //...
   ],
   vite: {
@@ -21,4 +22,14 @@ export default defineNuxtConfig({
       },
     },
   },
+  css: [
+    '~/assets/css/global.css', // Include the global CSS file
+  ],
+  googleFonts: {
+    families: {
+      Roboto: true,
+      "Source Sans 3": true
+    }
+  }
+  
 })

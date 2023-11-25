@@ -140,6 +140,9 @@
 
 <script>
 export default {
+	props: {
+    	cookiesNoAceptadas: false,
+  	},
 	data() {
 		return {
 			dialog: false,
@@ -151,6 +154,7 @@ export default {
 	methods: {
 		aceptarCookies() {
 			this.cookiesNoAceptadas = false;
+			this.$emit('aceptarCookies', false)
 		},
 	},
 };
