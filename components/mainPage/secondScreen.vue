@@ -20,7 +20,7 @@
         valoras la excelencia en la presencia digital de tu negocio. En nuestra plataforma, te ofrecemos no solo servicios de diseño web vanguardistas, sino también soluciones tecnológicas personalizadas para potenciar el rendimiento de tu empresa. Desde la implementación de bases de datos hasta la creación de portales especializados, nuestro compromiso es impulsar tu éxito en línea. Con enfoque en el posicionamiento web y SEO, nos esforzamos por llevar tu presencia digital a nuevas alturas. ¡Descubre cómo podemos transformar tu visión en una realidad digital impactante y efectiva!
       </p>
 
-      <v-btn href="/servicios" color="orange" size="x-large" elevation="4">Descubrir</v-btn>
+      <nuxt-link to="/servicios"><v-btn color="orange" size="x-large" elevation="4">Descubrir</v-btn></nuxt-link>
     </div>
   </v-sheet>
     <div class="main">

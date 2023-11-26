@@ -15,7 +15,9 @@
 						<nuxt-link to="/" class="nav-link nav-link-apple"></nuxt-link>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link nav-link-bag"></a>
+						<nuxt-link to="/contacto"
+							><v-icon icon="mdi mdi-account-box-outline" class="nav-link nav-link-bag"></v-icon
+						></nuxt-link>
 					</li>
 				</ul>
 				<!-- /.nav-list nav-list-mobile -->
@@ -97,35 +99,86 @@
 	</header>
 	<div class="mt-16">
 		<slot />
-		<extra-Cookies @aceptarCookies="updateCookieData" v-if="cookiesAceptadas"/>
+		<extra-Cookies @aceptarCookies="updateCookieData" v-if="cookiesAceptadas" />
 	</div>
-	<footer>
-		<div class="footer footer-main">
-			<div class="footer footer-div">
+	<footer class="footer mt-16">
+		<div class="primera-parte-footer mt-16">
+			<v-row class="v-flex justify-center">
+				<h2 class="text-orange-darken-2 sm:mt-10">-- COMPANY NAME --</h2>
+			</v-row>
+			<v-row class="mt-16"></v-row>
+			<v-row class="v-flex justify-center mt-16">
+				<nuxt-link to="/servicios"><v-btn varian="plain" class="text-h6">Empresa</v-btn></nuxt-link>
+			</v-row>
+			<v-row class="v-flex justify-center mt-8">
+				<nuxt-link to="/servicios"
+					><v-btn varian="plain" class="text-h6">Servicios</v-btn></nuxt-link
+				>
+			</v-row>
+			<v-row class="v-flex justify-center mt-8">
+				<nuxt-link to="/servicios"
+					><v-btn varian="plain" class="text-h6">Tecnologías</v-btn></nuxt-link
+				>
+			</v-row>
+			<v-row class="v-flex justify-center mt-8">
+				<nuxt-link to="/servicios"
+					><v-btn varian="plain" class="text-h6">Sobre nosotros</v-btn></nuxt-link
+				>
+			</v-row>
+			<v-row class="v-flex justify-center mt-8">
+				<nuxt-link to="/servicios"
+					><v-btn varian="plain" class="text-h6">Contacto</v-btn></nuxt-link
+				>
+			</v-row>
+			<v-row class="mt-sm-16"></v-row>
+			<v-row class="mt-xl-16"></v-row>
+			<v-row class="mt-xl-16"></v-row>
+			<v-row class="v-flex justify-center align-center pt-16 mt-16">
 				<v-btn v-for="icon in icons" :key="icon" class="mx-4" :icon="icon" variant="text"></v-btn>
-			</div>
-			<div class="footer footer-div">
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium vitae fuga veniam,
-					delectus minus facilis veritatis ipsum nisi quibusdam, molestias pariatur illo facere
-					dolorem dignissimos beatae libero odio tenetur totam! Temporibus atque consequuntur
-					quaerat vitae ab eligendi cumque quos ipsa doloribus, aperiam quis at placeat et harum
-					nisi vero odit incidunt numquam dolor, autem maxime possimus mollitia deleniti non. Ipsum
-					odio corporis a veniam vel dolor, pariatur ex quia commodi consectetur illum quod fugit
-					ducimus deserunt officia quam quae nihil voluptas aut distinctio rem, sed harum unde?
-					Cumque quibusdam sequi atque distinctio. Ullam ratione eligendi ipsa asperiores voluptate
-					repudiandae numquam explicabo beatae iusto incidunt sint, dolorum voluptatibus. Hic
-					aliquid consequuntur iste ab, obcaecati, molestiae doloremque laborum quidem error vitae,
-					accusamus facere porro at eos quas eum et inventore repudiandae reprehenderit pariatur.
-					Corporis, dolorum voluptatem incidunt quas ut accusamus magnam magni rerum illum
-					cupiditate laboriosam repudiandae aliquid, neque architecto enim? Aliquid quibusdam dicta
-					nisi temporibus quisquam facere cumque aspernatur eos quis. Asperiores molestiae nam
-					commodi minus aliquam dolore sunt, ex numquam ipsa harum nisi aspernatur, perferendis qui
-					enim veniam, officia delectus ad consectetur quos excepturi cum sint. Reprehenderit minus
-					temporibus, expedita id accusamus vero sapiente a aliquid natus qui eligendi et.
-				</p>
-			</div>
+			</v-row>
 		</div>
+		<v-container class="mt-sm-16 mb-sm-16 mb-4">
+			<v-row class="mt-sm-16"></v-row>
+			<h4 class="mb-4 text-center text-grey-darken-2">1.2 Información Personal</h4>
+			<p class="text-grey-darken-1">
+				Además de la información recopilada a través de cookies, es posible que solicitemos ciertos
+				datos personales, como su nombre, dirección de correo electrónico y número de teléfono, solo
+				cuando sea necesario para proporcionar nuestros servicios.
+			</p>
+			<h4 class="mb-4 mt-4 text-center text-grey-darken-2">
+				2. Cómo Utilizamos la Información Utilizamos la información recopilada para:
+			</h4>
+			<p class="text-grey-darken-1">
+				Personalizar su experiencia en nuestro sitio web. Proporcionar servicios y responder a sus
+				consultas. Mejorar la calidad de nuestros servicios y desarrollar nuevos productos. Enviarle
+				comunicaciones relacionadas con nuestros servicios.
+			</p>
+			<h4 class="mb-4 mt-4 text-center text-grey-darken-2">3. Compartir Información</h4>
+			<p class="text-grey-darken-1">
+				No compartimos su información personal con terceros, excepto cuando sea necesario para la
+				prestación de nuestros servicios o cuando estemos legalmente obligados a hacerlo.
+			</p>
+			<h4 class="mb-4 mt-4 text-center text-grey-darken-2">4. Notificación de Cookies</h4>
+			<p class="text-grey-darken-1">
+				Al visitar nuestro sitio web, verá una notificación de cookies que le informa sobre el uso
+				de cookies y proporciona un enlace a esta Política de Privacidad. Al continuar navegando,
+				usted acepta el uso de cookies según lo descrito en esta política.
+			</p>
+			<h4 class="mb-4 mt-4 text-center text-grey-darken-2">5. Sus Derechos</h4>
+			<p class="text-grey-darken-1">
+				Usted tiene el derecho de acceder, corregir o eliminar su información personal. Si tiene
+				alguna pregunta o desea ejercer sus derechos de privacidad, no dude en ponerse en contacto
+				con nosotros.
+			</p>
+			<h4 class="mb-4 mt-4 text-center text-grey-darken-2">6. Cambios en Esta Política</h4>
+			<p class="text-grey-darken-1">
+				Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento. Se
+				le notificarán cambios significativos. Le recomendamos que revise periódicamente esta
+				política para estar informado sobre cómo estamos protegiendo su información. Gracias por
+				confiar en [Nombre de Tu Empresa]. [Nombre de Tu Empresa] [Contacto de la Empresa]
+				[Información de Contacto Adicional]
+			</p>
+		</v-container>
 	</footer>
 </template>
 
@@ -149,6 +202,9 @@ header {
 	border-bottom-width: 1px;
 }
 
+.main-div {
+	height: 100dvh;
+}
 .nav-list {
 	list-style: none;
 	display: flex;
@@ -190,7 +246,34 @@ header {
 	align-self: center;
 	width: 1.4rem;
 	height: 4.4rem;
-	background: url("~/css/icons/bag.svg") center no-repeat;
+}
+
+.active .nav-list-larger .nav-item {
+	opacity: 1;
+}
+
+.active .nav-list-larger {
+	animation: fadeIn 1s ease-in;
+	opacity: 1;
+	width: 100%;
+	height: 100vh;
+	visibility: visible;
+}
+
+.footer {
+	border-top: 1px;
+	border-top-style: solid;
+	border-color: gray;
+}
+
+.primera-parte-footer {
+	min-height: 100dvh;
+}
+
+@media screen and (min-width: 1100px) {
+	.primera-parte-footer {
+		min-height: auto;
+	}
 }
 
 @media screen and (max-width: 1100px) {
@@ -385,16 +468,7 @@ header {
 		border-bottom: none;
 	}
 }
-.active .nav-list-larger .nav-item {
-	opacity: 1;
-}
-.active .nav-list-larger {
-	animation: fadeIn 1s ease-in;
-	opacity: 1;
-	width: 100%;
-	height: 100vh;
-	visibility: visible;
-}
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -404,26 +478,6 @@ header {
 		opacity: 1;
 		visibility: visible;
 	}
-}
-
-.footer {
-	display: flex;
-}
-
-.footer-main {
-	border-top: 1px;
-	border-top-style: solid;
-	border-color: gray;
-	flex-direction: column;
-}
-
-.footer-div {
-	margin-top: 1rem;
-	justify-content: center;
-}
-
-.main-div {
-	height: 100dvh;
 }
 </style>
 <script>
@@ -439,7 +493,7 @@ export default {
 	data() {
 		return {
 			icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-			cookiesAceptadas: false
+			cookiesAceptadas: false,
 		};
 	},
 	methods: {
@@ -448,8 +502,8 @@ export default {
 			selectElement("header").classList.remove("active");
 		},
 		updateCookieData() {
-      		this.cookiesAceptadas = true;
-    },
+			this.cookiesAceptadas = true;
+		},
 	},
 
 	computed: {

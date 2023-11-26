@@ -1,5 +1,5 @@
 <template>
-    <h1>Servicios</h1>
+<h1>Sobre nosotros</h1>
 </template>
 <style></style>
 <script>

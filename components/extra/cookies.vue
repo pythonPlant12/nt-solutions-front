@@ -7,15 +7,16 @@
 		stacked
 	>
 		<template v-slot:text>
-			Vuetify uses cookies to enable and import the use of the website. Please
-			see our
-			<a
-				href="https://www.iubenda.com/privacy-policy/76325752/cookie-policy"
-				target="_blank"
-				>Privacy Policy</a
+			Bienvenido/a a <b class="text-orange-darken-2">Nombre de Tu Empresa</b>, una empresa dedicada
+			al desarrollo de páginas web. Valoramos la privacidad de nuestros usuarios y clientes y nos
+			comprometemos a proteger la información personal que puedan proporcionarnos. La presente
+			describe
+
+			<a href="https://www.iubenda.com/privacy-policy/76325752/cookie-policy" target="_blank"
+				><b>Política de Privacidad</b></a
 			>
-			for more information. By clicking "Accept Cookies" or continuing to use
-			the site, you agree to the use of cookies.
+			cómo recopilamos, utilizamos y compartimos la información que obtenemos a través de nuestros
+			servicios en línea.
 		</template>
 
 		<template v-slot:actions>
@@ -28,29 +29,33 @@
 						variant="outlined"
 						v-bind="props"
 					>
-						Manage Cookies
+						Configurar Cookies
 					</v-btn>
 				</template>
 
-				<v-card title="Cookie Settings">
+				<v-card title="Configuración de los Cookies">
 					<v-card-text>
+						<h4>Cookies</h4>
 						<p class="pb-4">
-							Vuetify websites use cookies to deliver and improve the visitor
-							experience. Learn more about the cookies we use on our Cookie
-							Policy page.
+							Utilizamos cookies y tecnologías similares para mejorar la experiencia del usuario y
+							personalizar el contenido. Al utilizar nuestro sitio web, usted acepta el uso de
+							cookies de acuerdo con esta Política de Privacidad. Las cookies son pequeños archivos
+							de datos que se almacenan en su dispositivo cuando visita nuestro sitio web.
+							Utilizamos tres tipos de cookies:
 						</p>
 
 						<v-list-subheader class="font-weight-black text-high-emphasis"
-							>Required Cookies</v-list-subheader
+							>Cookies Necesarias (Required Cookies)</v-list-subheader
 						>
 
 						<p class="mb-4">
-							These cookies are required for the site to function and cannot be
-							turned off.
+							Estas cookies son esenciales para el funcionamiento básico de nuestro sitio web. Le
+							permiten navegar por el sitio y utilizar funciones clave, como acceder a áreas
+							seguras.
 						</p>
 
 						<v-list-subheader class="font-weight-black text-high-emphasis"
-							>Performance Cookies</v-list-subheader
+							>Cookies de Rendimiento (Performance Cookies)</v-list-subheader
 						>
 
 						<v-switch
@@ -64,12 +69,13 @@
 						></v-switch>
 
 						<p class="mb-4">
-							Counts website visits and clicks to understand where people most
-							engage with links to make the experience better.
+							Estas cookies recopilan información sobre cómo los visitantes utilizan nuestro sitio
+							web, como las páginas que visitan con más frecuencia. Nos ayudan a mejorar el
+							rendimiento y la eficiencia de nuestro sitio.
 						</p>
 
 						<v-list-subheader class="font-weight-black text-high-emphasis"
-							>Advertising Cookies</v-list-subheader
+							>Cookies Publicitarias (Advertising Cookies)</v-list-subheader
 						>
 
 						<v-switch
@@ -83,10 +89,9 @@
 						></v-switch>
 
 						<p class="mb-16">
-							Set by our advertising partners, these cookies are used to build a
-							profile of your interests and show you relevant ads on other
-							sites. They do not store personal information, but are based on
-							uniquely identifying your browser and internet device.
+							Estas cookies se utilizan para mostrar anuncios relevantes para usted y sus intereses.
+							También pueden ser utilizadas para realizar un seguimiento de la eficacia de nuestras
+							campañas publicitarias.
 						</p>
 					</v-card-text>
 
@@ -98,9 +103,9 @@
 							color="orange-darken-4"
 							rounded="0"
 							variant="plain"
-							@click="dialog = false"
+							@click="dialog = false, aceptarCookies()"
 						>
-							Decline All
+							Rechazar todas
 						</v-btn>
 
 						<v-btn
@@ -108,9 +113,9 @@
 							color="orange-darken-4"
 							rounded="0"
 							variant="flat"
-							@click="dialog = false"
+							@click="dialog = false, aceptarCookies()"
 						>
-							Save and Accept
+							Guardar y aceptar
 						</v-btn>
 					</v-card-actions>
 				</v-card>
@@ -123,7 +128,7 @@
 				variant="flat"
 				@click="aceptarCookies()"
 			>
-				Accept Cookies
+				Aceptar Cookies
 			</v-btn>
 		</template>
 	</v-banner>
@@ -141,8 +146,8 @@
 <script>
 export default {
 	props: {
-    	cookiesNoAceptadas: false,
-  	},
+		cookiesNoAceptadas: false,
+	},
 	data() {
 		return {
 			dialog: false,
@@ -154,7 +159,7 @@ export default {
 	methods: {
 		aceptarCookies() {
 			this.cookiesNoAceptadas = false;
-			this.$emit('aceptarCookies', false)
+			this.$emit("aceptarCookies", false);
 		},
 	},
 };
