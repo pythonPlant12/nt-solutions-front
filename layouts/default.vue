@@ -11,9 +11,10 @@
 							<span class="line line-buttom1"></span>
 						</div>
 					</li>
-					<li class="nav-item">
-						<nuxt-link to="/" class="nav-link nav-link-apple"></nuxt-link>
-					</li>
+						<nuxt-link to="/" >
+							<v-img src="/css/pictures/logo.svg" class="nav-link nav-link-logo logo-moviendose" width="30"></v-img>
+						</nuxt-link>
+
 					<li class="nav-item">
 						<nuxt-link to="/contacto"
 							><v-icon icon="mdi mdi-account-box-outline" class="nav-link nav-link-bag"></v-icon
@@ -30,7 +31,9 @@
 						</div>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link"></a>
+						<nuxt-link to="/">
+							<v-img src="/css/pictures/logo.svg" class="nav-link nav-link-logo"></v-img>
+						</nuxt-link>						
 					</li>
 
 					<li class="nav-item">
@@ -228,11 +231,20 @@ header {
 	opacity: 0.7;
 }
 
-.nav-link-apple {
+.nav-link-logo {
 	align-self: center;
 	width: 1.6rem;
-	height: 4.4rem;
-	background: url("~/css/icons/apple.svg") center no-repeat;
+	height: 1.56rem;
+	transition: opacity 3s;
+}
+
+.logo-moviendose {
+	transition: opacity 3s;
+	animation: 10s logoMoviendose infinite;
+}
+
+.active .nav-link-logo {
+	display: none;
 }
 
 .nav-link-search {
@@ -336,6 +348,8 @@ header {
 		height: 4.8rem;
 		display: flex;
 		justify-content: center;
+		align-content: center;
+
 	}
 
 	.nav-link-mobile {
@@ -415,11 +429,12 @@ header {
 		backdrop-filter: blur(1rem);
 	}
 
-	.nav-link-apple {
+	.nav-link-logo {
 		width: 1.8rem;
 		height: 4.8rem;
 		position: relative;
 		z-index: 15;
+		transition: opacity 3s
 	}
 
 	.nav-link-bag {
@@ -469,6 +484,7 @@ header {
 	}
 }
 
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -477,6 +493,13 @@ header {
 	to {
 		opacity: 1;
 		visibility: visible;
+	}
+}
+@keyframes logoMoviendose {
+	from {
+		rotate: 0;
+	} to {
+		rotate: 360deg;
 	}
 }
 </style>
