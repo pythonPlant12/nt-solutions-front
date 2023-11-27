@@ -8,14 +8,14 @@
 					class="slide-image"
 				></v-img>
 			</v-col>
-            <v-col cols="12" sm="0"></v-col>
-			<v-col  sm="5" col="12" class="my-16 mx-md-12 descripcion-title">
-				<h1 class="text-sm-h3 pb-16 text-grey-darken-3 mx-sm-4">Contenedores con Docker</h1>
+			<v-col cols="12" sm=""></v-col>
+			<v-col sm="5" col="12" class="my-16 mx-md-12 descripcion-title">
+				<h1 class="text-sm-h3 pb-16 text-orange-darken-2 mx-sm-4">Tecnologías Cloud</h1>
 				<p class="text-sm-h5 text-grey-darken-2 mx-sm-4 descripcion-text">
-					Utilizamos Docker para crear entornos de desarrollo y despliegue consistentes. La
-					virtualización a nivel de contenedor nos permite empaquetar aplicaciones y sus
-					dependencias, garantizando la portabilidad y eficiencia en la implementación.
-                </p>
+					Adoptamos tecnologías en la nube para ofrecer soluciones escalables y flexibles.
+					Trabajamos con plataformas como AWS, Azure y Google Cloud para proporcionar servicios
+					seguros y confiables, adaptados a las necesidades específicas de nuestros clientes.
+				</p>
 			</v-col>
 		</v-card>
 	</v-window-item>
@@ -23,23 +23,22 @@
 
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
-
 <style>
 .primera-ventana {
 	min-height: 100dvh !important;
 }
 .slide-image {
-    opacity: 0;
+	opacity: 0;
 	animation: slideImageScale 5s infinite, apareciendo 2s forwards;
 }
 .descripcion-title {
-    opacity: 0;
-    animation: apareciendo 2s forwards;
+	opacity: 0;
+	animation: apareciendo 2s forwards;
 }
 
 .descripcion-text {
-    opacity: 0;
-    animation: 1s apareciendo 2s forwards;
+	opacity: 0;
+	animation: 1s apareciendo 2s forwards;
 }
 
 @keyframes apareciendo {
@@ -48,49 +47,45 @@
 	}
 }
 @media screen and (max-width: 680px) {
-    @keyframes slideImageScale {
-        33% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(0.5);
-        }
-        100% {
-            transform: scale(1);
-        }
-    
-    }
+	@keyframes slideImageScale {
+		33% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(0.5);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
 }
 
 @media screen and (min-width: 681px) {
-
-@keyframes slideImageScale {
-	33% {
-		transform: scale(1);
+	@keyframes slideImageScale {
+		33% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.2);
+		}
+		100% {
+			transform: scale(1);
+		}
 	}
-	50% {
-		transform: scale(1.2);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
 }
 @media screen and (min-width: 1281px) {
-
-    @keyframes slideImageScale {
-        33% {
-            transform: scale(1);
-        }
-        50% {
-            transform: scale(1.5);
-        }
-        100% {
-            transform: scale(1);
-        }
-    }
-    }
-
+	@keyframes slideImageScale {
+		33% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.5);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+}
 </style>
 
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
