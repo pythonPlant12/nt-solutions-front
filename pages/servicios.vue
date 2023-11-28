@@ -136,7 +136,7 @@ export default {
 			show: false,
 			typedText: "",
 			fullText:
-				"Descubre una suite de servicios tecnológicos en EMPRESA diseñados para un impacto máximo. Desde el desarrollo de sitios web de vanguardia hasta integraciones de bases de datos sin fisuras y diseño web creativo, adaptamos soluciones para elevar tu marca. Nuestro marketing digital estratégico, aplicaciones web preparadas para el futuro y soluciones de comercio electrónico personalizadas redefinen el éxito en el panorama digital. Experimenta la innovación con EMPRESA, donde tu visión se encuentra con la excelencia digital.",
+				"Descubre una suite de servicios tecnológicos en NT Solutions diseñados para un impacto máximo. Desde el desarrollo de sitios web de vanguardia hasta integraciones de bases de datos sin fisuras y diseño web creativo, adaptamos soluciones para elevar tu marca. Nuestro marketing digital estratégico, aplicaciones web preparadas para el futuro y soluciones de comercio electrónico personalizadas redefinen el éxito en el panorama digital. Experimenta la innovación con NT Solutions, donde tu visión se encuentra con la excelencia digital.",
 			tituloCard1: "Desarrollo de Sitios Web a Medida",
 			subTituloCard1: "Transformamos Ideas en Realidad Digital",
 			textoCard1: "Eleva tu presencia en línea con nuestros servicios personalizados de desarrollo de sitios web. Nuestro equipo de desarrolladores expertos crea sitios web receptivos y visualmente impactantes adaptados a las necesidades únicas de tu negocio. Desde el concepto hasta la implementación, convertimos tu visión en una experiencia en línea poderosa.",

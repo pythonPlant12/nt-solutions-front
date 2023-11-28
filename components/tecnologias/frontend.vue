@@ -1,20 +1,18 @@
 <template>
 	<v-window-item class="primera-ventana">
 		<v-card elevation="24" class="d-sm-flex justify-sm-center align-sm-center ma-2 primera-ventana">
-			<v-col sm="5" col="12" class="my-16 mx-md-12">
-				<v-img
-					src="/css/pictures/slide1-docker-logo-big.png"
-					height="100"
-					class="slide-image"
-				></v-img>
+			<v-col sm="5" col="12" class="mt-10 mx-md-12">
+				<v-img src="/css/pictures/slide1-frontend-logo.png" height="200" class="slide-image"></v-img>
 			</v-col>
 			<v-col cols="12" sm=""></v-col>
-			<v-col sm="5" col="12" class="my-16 mx-md-12 descripcion-title">
-				<h1 class="text-sm-h3 pb-16 mx-sm-4 text-orange-darken-2">Contenedores con Docker</h1>
+			<v-col sm="5" col="12" class="mb-16 mx-md-12 descripcion-title">
+				<h1 class="text-sm-h3 mb-16 mx-sm-4 text-orange-darken-2">
+				Desarrollo Frontend con Angular y Vue
+				</h1>
 				<p class="text-sm-h5 text-grey-darken-2 mx-sm-4 descripcion-text">
-					Utilizamos Docker para crear entornos de desarrollo y despliegue consistentes. La
-					virtualización a nivel de contenedor nos permite empaquetar aplicaciones y sus
-					dependencias, garantizando la portabilidad y eficiencia en la implementación.
+					Para la creación de interfaces de usuario dinámicas y robustas, empleamos Angular y
+					Vue.js. Estas tecnologías frontend permiten el desarrollo de aplicaciones web interactivas
+					y escalables, brindando experiencias de usuario excepcionales.
 				</p>
 			</v-col>
 		</v-card>
@@ -66,7 +64,7 @@
 			transform: scale(1);
 		}
 		50% {
-			transform: scale(1.2);
+			transform: scale(1.5);
 		}
 		100% {
 			transform: scale(1);

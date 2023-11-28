@@ -1,21 +1,21 @@
 <template>
 	<v-window-item class="primera-ventana">
 		<v-card elevation="24" class="d-sm-flex justify-sm-center align-sm-center ma-2 primera-ventana">
-			<v-col sm="5" col="12" class="my-16 mx-md-12">
-				<v-img
-					src="/css/pictures/slide1-docker-logo-big.png"
-					height="100"
-					class="slide-image"
-				></v-img>
+			<v-col sm="5" col="12" class="mt-16 mb-8 mx-md-12">
+				<h1 class="text-sm-h3 pb-16 text-orange-darken-2 mx-sm-4">
+					Desarrollo Ágil con Django y DRF
+				</h1>
+				<p class="text-sm-h5 text-grey-darken-2 mx-sm-4 descripcion-text mx-12 mx-sm-auto">
+					Experimenta un desarrollo rápido y seguro con la combinación poderosa de Django y Django
+					Rest Framework (DRF). Con Django, obtienes eficiencia en la construcción de
+					funcionalidades, mientras que DRF facilita la creación de APIs potentes para una
+					comunicación efectiva entre el frontend y el backend. La seguridad está integrada en cada
+					capa, gracias a las prácticas seguras de Django. 
+				</p>
 			</v-col>
 			<v-col cols="12" sm=""></v-col>
-			<v-col sm="5" col="12" class="my-16 mx-md-12 descripcion-title">
-				<h1 class="text-sm-h3 pb-16 text-orange-darken-2 mx-sm-4">Tecnologías Cloud</h1>
-				<p class="text-sm-h5 text-grey-darken-2 mx-sm-4 descripcion-text">
-					Adoptamos tecnologías en la nube para ofrecer soluciones escalables y flexibles.
-					Trabajamos con plataformas como AWS, Azure y Google Cloud para proporcionar servicios
-					seguros y confiables, adaptados a las necesidades específicas de nuestros clientes.
-				</p>
+			<v-col sm="5" col="12" class="mx-md-12 descripcion-title">
+				<v-img src="/css/pictures/slide2-django-logo.png" height="100" class="slide-image"></v-img>
 			</v-col>
 		</v-card>
 	</v-window-item>

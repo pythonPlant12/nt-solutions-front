@@ -4,9 +4,11 @@
     show-arrows
     direction="vertical"
   >
-  <tecnologias-slide1 />
-  <tecnologias-slide2 />
-  <tecnologias-slide3 />
+  <tecnologias-databases/>
+  <tecnologias-cloud />
+  <tecnologias-docker />
+  <tecnologias-django />
+  <tecnologias-frontend />
   </v-window>
 </template>
 

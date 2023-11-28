@@ -7,7 +7,7 @@
 		stacked
 	>
 		<template v-slot:text>
-			Bienvenido/a a <b class="text-orange-darken-2">Nombre de Tu Empresa</b>, una empresa dedicada
+			Bienvenido/a a <b class="text-orange-darken-2">NT Solutions</b>, una empresa dedicada
 			al desarrollo de páginas web. Valoramos la privacidad de nuestros usuarios y clientes y nos
 			comprometemos a proteger la información personal que puedan proporcionarnos. La presente
 			describe

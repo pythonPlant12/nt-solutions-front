@@ -39,7 +39,7 @@
 					<li class="nav-item">
 						<nuxt-link to="/" class="nav-link nav-link-mobile" @click.prevent="cerrarMenu()"
 							><v-btn :color="empresa" append-icon="mdi mdi-domain" size="large" variant="text"
-								>Empresa</v-btn
+								>NT Solutions</v-btn
 							></nuxt-link
 						>
 					</li>
@@ -107,11 +107,11 @@
 	<footer class="footer mt-16">
 		<div class="primera-parte-footer mt-16">
 			<v-row class="v-flex justify-center">
-				<h2 class="text-orange-darken-2 sm:mt-10">-- COMPANY NAME --</h2>
+				<h2 class="text-orange-darken-2 sm:mt-10">NT Solutions</h2>
 			</v-row>
 			<v-row class="mt-16"></v-row>
 			<v-row class="v-flex justify-center mt-16">
-				<nuxt-link to="/servicios"><v-btn varian="plain" class="text-h6">Empresa</v-btn></nuxt-link>
+				<nuxt-link to="/servicios"><v-btn varian="plain" class="text-h6">NT Solutions</v-btn></nuxt-link>
 			</v-row>
 			<v-row class="v-flex justify-center mt-8">
 				<nuxt-link to="/servicios"
@@ -178,8 +178,8 @@
 				Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento. Se
 				le notificarán cambios significativos. Le recomendamos que revise periódicamente esta
 				política para estar informado sobre cómo estamos protegiendo su información. Gracias por
-				confiar en [Nombre de Tu Empresa]. [Nombre de Tu Empresa] [Contacto de la Empresa]
-				[Información de Contacto Adicional]
+				confiar en NT Solutions. NT Solutions Ltd. info@ntsolutions.com
+				+34 633 144 405
 			</p>
 		</v-container>
 	</footer>
@@ -273,7 +273,7 @@ header {
 }
 
 .footer {
-	border-top: 1px;
+	border-top: 3px;
 	border-top-style: solid;
 	border-color: gray;
 }

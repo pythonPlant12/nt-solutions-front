@@ -3,18 +3,18 @@
 		<v-card elevation="24" class="d-sm-flex justify-sm-center align-sm-center ma-2 primera-ventana">
 			<v-col sm="5" col="12" class="my-16 mx-md-12">
 				<v-img
-					src="/css/pictures/slide1-docker-logo-big.png"
+					src="/css/pictures/slide1-docker-logo.png"
 					height="100"
 					class="slide-image"
 				></v-img>
 			</v-col>
 			<v-col cols="12" sm=""></v-col>
 			<v-col sm="5" col="12" class="my-16 mx-md-12 descripcion-title">
-				<h1 class="text-sm-h3 pb-16 text-orange-darken-2 mx-sm-4">Tecnologías Cloud</h1>
+				<h1 class="text-sm-h3 pb-16 mx-sm-4 text-orange-darken-2">Contenedores con Docker</h1>
 				<p class="text-sm-h5 text-grey-darken-2 mx-sm-4 descripcion-text">
-					Adoptamos tecnologías en la nube para ofrecer soluciones escalables y flexibles.
-					Trabajamos con plataformas como AWS, Azure y Google Cloud para proporcionar servicios
-					seguros y confiables, adaptados a las necesidades específicas de nuestros clientes.
+					Utilizamos Docker para crear entornos de desarrollo y despliegue consistentes. La
+					virtualización a nivel de contenedor nos permite empaquetar aplicaciones y sus
+					dependencias, garantizando la portabilidad y eficiencia en la implementación.
 				</p>
 			</v-col>
 		</v-card>
