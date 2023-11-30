@@ -136,9 +136,9 @@
 						<v-list-item-subtitle> Amplifica tu Presencia en Línea </v-list-item-subtitle>
 					</v-list-item>
 				</v-list>
-					<v-div class="d-flex justify-sm-end justify-center mb-2">
+					<div class="d-flex justify-sm-end justify-center mb-2">
 							<v-btn @click="handleReset" class=""> Enviar </v-btn>
-					</v-div>
+					</div>
 			</v-card>
 		</template>
 

@@ -140,7 +140,7 @@
 				<v-btn v-for="icon in icons" :key="icon" class="mx-4" :icon="icon" variant="text"></v-btn>
 			</v-row>
 		</div>
-		<v-container class="mt-sm-16 mb-sm-16 mb-4">
+		<v-container class="mt-sm-16 mb-sm-16 mb-4 segunda-parte">
 			<v-row class="mt-sm-16"></v-row>
 			<h4 class="mb-4 text-center text-grey-darken-2">1.2 Información Personal</h4>
 			<p class="text-grey-darken-1">
@@ -280,6 +280,9 @@ header {
 
 .primera-parte-footer {
 	min-height: 100dvh;
+}
+.segunda-parte {
+	z-index: 500 !important;
 }
 
 @media screen and (min-width: 1100px) {

@@ -32,6 +32,7 @@
 	opacity: 0;
 	animation: slideImageScale 5s infinite, apareciendo 2s forwards;
 }
+
 .descripcion-title {
 	opacity: 0;
 	animation: apareciendo 2s forwards;
