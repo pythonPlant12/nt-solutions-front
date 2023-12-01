@@ -2,7 +2,7 @@
 	<div id="video-container">
 		<video id="video" autoplay loop muted>
 			<!-- Add your video source here -->
-			<source src="/css/pictures/video3.mp4" type="video/mp4" />
+			<source src="/css/pictures/sobreNosotrosBackground.mp4" type="video/mp4" />
 			Your browser does not support the video tag.
 		</video>
 	</div>
@@ -76,23 +76,23 @@ export default {
 			title1: "Líderes en la Revolución Digital Global",
 			text1:
 				"Forjamos el camino hacia la revolución digital desde el epicentro de la innovación. Nuestra empresa lidera con tecnologías avanzadas que transforman la manera en que el mundo abraza la innovación.",
-			image1: "/css/pictures/sobreNosotros-card3.png",
+			image1: "/css/pictures/sobreNosotros-card1.png",
 			animation1: "moviendose",
 
 			title2: "Arquitectos de Soluciones Transformadoras",
 			text2:
 				"En el corazón de la tecnología, diseñamos soluciones que trascienden fronteras. Guiados por una visión global, llevamos la excelencia a cada rincón del planeta a través de implementaciones de última generación.",
-			image2: "/css/pictures/sobreNosotros-card4.png",
+			image2: "/css/pictures/sobreNosotros-card2.png",
 
 			title3: "Innovación como Pilar Fundamental",
 			text3:
 				"Nuestra historia se construye con líneas de innovación que cruzan continentes. Desde el epicentro de la acción, generamos un impacto positivo en el mundo mediante tecnologías que eliminan las barreras geográficas.",
-			image3: "/css/pictures/sobreNosotros-card7.png",
+			image3: "/css/pictures/sobreNosotros-card3.png",
 
 			title4: "Conectando Horizontes con Tecnología Avanzada",
 			text4:
 				"Enlazamos horizontes, conectando continentes con tecnologías avanzadas. Somos la fuerza impulsora detrás de una nueva era digital, llevando la esencia de innovación y calidad a todos los rincones del globo.",
-			image4: "/css/pictures/sobreNosotros-card8.png",
+			image4: "/css/pictures/sobreNosotros-card4.png",
 
 			title5: "Estrategas de la Transformación Digital",
 			text5:

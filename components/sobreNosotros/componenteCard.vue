@@ -79,7 +79,7 @@
 }
 
 .moviendose {
-    animation: rotate360 4s infinite linear, 6s apareciendo 3s forwards !important;
+	animation: rotate360 4s infinite linear, 6s apareciendo 3s forwards !important;
 }
 
 @keyframes rotate360 {
