@@ -49,7 +49,7 @@
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100dvh;
 	overflow: hidden;
 	opacity: 0;
 	animation: apareciendoFondoPantalla 2s forwards;
