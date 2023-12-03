@@ -247,12 +247,6 @@ header {
 	display: none;
 }
 
-.nav-link-search {
-	width: 1.6rem;
-	height: 4.4rem;
-	background: url("~/css/icons/search.svg") center no-repeat;
-}
-
 .nav-link-bag {
 	margin-right: 2rem;
 	align-self: center;
