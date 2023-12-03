@@ -175,12 +175,12 @@
 <!-- ! TYPESCRIPT -->
 
 <script>
-import gsap from 'gsap';
-import ScrollToPlugin from 'gsap/ScrollToPlugin'; // Import the ScrollToPlugin
+import gsap from 'gsap/dist/gsap';
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin'; // Import the ScrollToPlugin
 
 
 // Register the plugin
-// gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(ScrollToPlugin);
 
 export default {
 	data() {

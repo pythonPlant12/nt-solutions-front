@@ -1,6 +1,6 @@
 <template>
 	<div id="video-container">
-		<video id="video" autoplay loop muted>
+		<video id="video" autoplay loop muted playsinline>
 			<!-- Add your video source here -->
 			<source src="/css/pictures/sobreNosotrosBackground.mp4" type="video/mp4" />
 			Your browser does not support the video tag.
