@@ -172,11 +172,11 @@
 }
 </style>
 
-<!-- ! TYPESCRIPT -->
+<!-- ! SCRIPT -->
 
 <script>
-import gsap from 'gsap/dist/gsap';
-import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin'; // Import the ScrollToPlugin
+import gsap from 'gsap';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'; // Import the ScrollToPlugin
 
 
 // Register the plugin
@@ -212,8 +212,8 @@ export default {
 			// Utilizando $refs accedemos al elemento html,
 			// smoother.scrollTo(segundoElemento)
 			gsap.to(window, {
-				duration: 1,
-				scrollTo: { y: "#segundoElementoHtml"}
+				duration: 0.7,
+				scrollTo: { y: "#segundoElementoHtml" },
 			})
 		}	
 	}

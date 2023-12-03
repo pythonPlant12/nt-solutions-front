@@ -1,13 +1,13 @@
 <template>
 	<v-sheet
-		class="d-flex align-center justify-center flex-wrap flex-column text-center mx-auto px-4 mt-16"
+		class="d-flex align-center justify-center flex-wrap flex-column text-center mx-auto px-4 mt-sm-16 mt-4"
 		elevation="24"
 		height="100vh"
 		rounded
 		max-width="80%"
 		width="100%"
 	>
-		<h2 class="titulo text-h2 font-weight-black text-orange">Empresa en un mundo digital</h2>
+		<h2 class="titulo text-h2 font-weight-black text-orange mt-sm-16">Empresa en un mundo digital</h2>
 
 		<div class="subtitulo text-h4 font-weight-medium mb-8 mt-8"><h3>Si estás aqui es porque...</h3></div>
 
