@@ -145,9 +145,6 @@
 
 <script>
 export default {
-	props: {
-		cookiesNoAceptadas: false,
-	},
 	data() {
 		return {
 			dialog: false,

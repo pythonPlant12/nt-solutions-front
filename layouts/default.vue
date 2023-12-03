@@ -111,7 +111,7 @@
 			</v-row>
 			<v-row class="mt-16"></v-row>
 			<v-row class="v-flex justify-center mt-16">
-				<nuxt-link to="/servicios"><v-btn varian="plain" class="text-h6">NT Solutions</v-btn></nuxt-link>
+				<nuxt-link to="/"><v-btn varian="plain" class="text-h6">NT Solutions</v-btn></nuxt-link>
 			</v-row>
 			<v-row class="v-flex justify-center mt-8">
 				<nuxt-link to="/servicios"
@@ -119,17 +119,17 @@
 				>
 			</v-row>
 			<v-row class="v-flex justify-center mt-8">
-				<nuxt-link to="/servicios"
+				<nuxt-link to="/tecnologias"
 					><v-btn varian="plain" class="text-h6">Tecnologías</v-btn></nuxt-link
 				>
 			</v-row>
 			<v-row class="v-flex justify-center mt-8">
-				<nuxt-link to="/servicios"
+				<nuxt-link to="/sobre-nosotros"
 					><v-btn varian="plain" class="text-h6">Sobre nosotros</v-btn></nuxt-link
 				>
 			</v-row>
 			<v-row class="v-flex justify-center mt-8">
-				<nuxt-link to="/servicios"
+				<nuxt-link to="/contacto"
 					><v-btn varian="plain" class="text-h6">Contacto</v-btn></nuxt-link
 				>
 			</v-row>
