@@ -180,7 +180,7 @@ import ScrollToPlugin from 'gsap/ScrollToPlugin'; // Import the ScrollToPlugin
 
 
 // Register the plugin
-gsap.registerPlugin(ScrollToPlugin);
+// gsap.registerPlugin(ScrollToPlugin);
 
 export default {
 	data() {
