@@ -1,18 +1,15 @@
 <template>
 	<v-sheet
-		class="d-flex align-center justify-center flex-wrap flex-column text-center mx-auto px-4 mt-sm-16 mt-4"
+		class="d-flex align-center justify-center flex-column text-center mx-auto px-4 mt-sm-16 mt-6"
 		elevation="24"
-		height="100vh"
+		height="80vh"
 		rounded
 		max-width="80%"
 		width="100%"
 	>
-		<h2 class="titulo text-h2 font-weight-black text-orange mt-sm-16">Empresa en un mundo digital</h2>
-
-		<div class="subtitulo text-h4 font-weight-medium mb-8 mt-8"><h3>Si estás aqui es porque...</h3></div>
-
-		<p class="texto text-h6 mb-8 mt-8">
-			valoras la excelencia en la presencia digital de tu negocio. En nuestra plataforma, te
+		<h2 class="titulo text-h3 font-weight-black text-orange mt-16">Empresa en un mundo digital</h2>
+		<p class="texto text-sm-h6 text-caption mb-8 mt-8 mx-4 mx-sm-16 text-grey-darken-1">
+			Si estás aqui es porque valoras la excelencia en la presencia digital de tu negocio. En nuestra plataforma, te
 			ofrecemos no solo servicios de diseño web vanguardistas, sino también soluciones tecnológicas
 			personalizadas para potenciar el rendimiento de tu empresa. Desde la implementación de bases
 			de datos hasta la creación de portales especializados, nuestro compromiso es impulsar tu éxito
@@ -96,10 +93,7 @@
 	.subtitulo {
 		font-size: 1.4rem !important;
 	}
-	.texto {
-		font-size: 1rem !important;
-		line-height: 1.2rem;
-	}
+
 }
 </style>
 

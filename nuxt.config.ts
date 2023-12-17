@@ -28,8 +28,8 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      Roboto: true,
-      "Source Sans 3": true
+      // Roboto: true,
+      // "Source Sans 3": true
     }
   }
   
