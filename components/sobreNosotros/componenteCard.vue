@@ -2,9 +2,8 @@
 	<v-sheet class="primera-pantalla d-sm-flex align-sm-center justify-sm-center">
 		<v-row class="primer-row row-1 mt-sm-0">
 			<v-spacer></v-spacer>
-			<v-col cols="12" md="10" class="prueba">
+			<v-col cols="12" md="10" class="prueba my-4">
 				<v-card
-					link
 					elevation="24"
 					variant="tonal"
 					class="mx-sm-16 mx-4 pa-4 rounded-xl card-1 mt-12"
@@ -34,16 +33,11 @@
 
 .card-1 {
 	min-height: 100%;
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(15px);
 	background-color: rgba(255, 255, 255, 0.373) !important;
 	border: 3px solid transparent !important;
 	animation: 1s apareciendo 1s forwards;
 	opacity: 0;
-}
-
-.card-1:hover {
-	border: 3px solid orange;
-	border-color: orange !important;
 }
 
 .titulo {
@@ -70,6 +64,16 @@
 	.primer-row {
 		margin-top: -11rem !important;
 	}
+
+	.card-1:hover {
+		border: 3px solid orange;
+		border-color: orange !important;
+		background-color: rgba(255, 255, 255, 0.104) !important;
+	}
+
+@media screen and (max-width: 679) {
+
+}
 }
 
 @keyframes apareciendo {
