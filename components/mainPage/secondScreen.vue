@@ -7,20 +7,21 @@
 		max-width="80%"
 		width="100%"
 	>
-		<h2 class="titulo text-h3 font-weight-black text-orange mt-16">Empresa en un mundo digital</h2>
+		<h2 class="titulo text-h3 font-weight-black text-orange">Empresa en un mundo digital</h2>
 		<p class="texto text-sm-h6 text-caption mb-8 mt-8 mx-4 mx-sm-16 text-grey-darken-1">
-			Si estás aqui es porque valoras la excelencia en la presencia digital de tu negocio. En nuestra plataforma, te
-			ofrecemos no solo servicios de diseño web vanguardistas, sino también soluciones tecnológicas
-			personalizadas para potenciar el rendimiento de tu empresa. Desde la implementación de bases
-			de datos hasta la creación de portales especializados, nuestro compromiso es impulsar tu éxito
-			en línea. Con enfoque en el posicionamiento web y SEO, nos esforzamos por llevar tu presencia
-			digital a nuevas alturas. ¡Descubre cómo podemos transformar tu visión en una realidad digital
-			impactante y efectiva!
+			Si estás aqui es porque valoras la excelencia en la presencia digital de tu negocio. En
+			nuestra plataforma, te ofrecemos no solo servicios de diseño web vanguardistas, sino también
+			soluciones tecnológicas personalizadas para potenciar el rendimiento de tu empresa. Desde la
+			implementación de bases de datos hasta la creación de portales especializados, nuestro
+			compromiso es impulsar tu éxito en línea. Con enfoque en el posicionamiento web y SEO, nos
+			esforzamos por llevar tu presencia digital a nuevas alturas.
 		</p>
 
-		<nuxt-link to="/servicios"
-			><v-btn color="orange" size="x-large" elevation="4">Descubrir</v-btn></nuxt-link
-		>
+		<nuxt-link to="/servicios">
+			<v-btn color="orange buttonDescubrir" :ripple="false" size="x-large" :elevation="buttonElevation" @mouseenter="setElevation(24)" @mouseleave="setElevation(4)"
+				>Descubrir</v-btn
+			>
+		</nuxt-link>
 	</v-sheet>
 	<h1 class="text-sm-h2 font-weight-black text-orange text-center mt-16">
 		Utilizando mismas tecnologías...
@@ -31,7 +32,6 @@
 		rounded
 		class="d-flex align-center justify-center mx-auto my-16"
 	>
-
 		<v-slide-group v-model="model" class="pa-4">
 			<v-slide-group-item v-for="item in items" :key="item" v-slot="{ toggle }">
 				<v-card :class="['ma-4']" height="200" width="200" @click="toggle">
@@ -93,17 +93,24 @@
 	.subtitulo {
 		font-size: 1.4rem !important;
 	}
-
 }
+
+@media screen and (max-width: 668) {
+	.titulo {
+		font-size: 1rem !important;
+	}
+}
+
 </style>
 
 <script>
 export default {
 	data: () => ({
+		buttonElevation: 4,
 		model: null,
 		show: false,
 		items: [
-			{	
+			{
 				nombre: "Google",
 				img: "/css/pictures/carousel-2/google.png",
 			},
@@ -139,7 +146,6 @@ export default {
 				nombre: "Postgres",
 				img: "/css/pictures/carousel-2/postgresql.png",
 			},
-
 		],
 		messages: [
 			{
@@ -193,5 +199,10 @@ export default {
 		lorem:
 			"Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum.",
 	}),
+	methods: {
+		setElevation(value) {
+			this.buttonElevation = value;
+		}
+	}
 };
 </script>

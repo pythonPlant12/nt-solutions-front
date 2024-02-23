@@ -4,6 +4,7 @@
 	<div class="main-div">
 		<v-carousel
 			:continuous="true"
+			interval="10000"
 			hide-delimiter-background
 			height="100vh"
 			cycle
@@ -17,12 +18,12 @@
 			>
 				<div class="carousel-items">
 					<div class="heading-carousel">
-						<h1 class="heading-carousel-title">{{ slide.title }}</h1>
-						<p class="heading-carousel-subtitle">{{ slide.subtitle }}</p>
+						<h1 class="heading-carousel-title rounded-lg">{{ slide.title }}</h1>
+						<p class="heading-carousel-subtitle rounded-lg">{{ slide.subtitle }}</p>
 					</div>
 				</div>
 				<div class="carousel-button">
-					<v-btn @click="moverAlSegundoElemento()" stacked variant="flat" prepend-icon="$vuetify" elevation="24" size="x-large" color="orange">
+					<v-btn @click="moverAlSegundoElemento()" :ripple="false" stacked prepend-icon="$vuetify" elevation="24" size="x-large" color="var(--three)">
 						Conocer más
 					</v-btn>
 				</div>
@@ -60,25 +61,26 @@
 .heading-carousel-title {
 	position: relative;
 	display: flex;
+	min-height: 12rem !important;
 	min-width: 35rem;
 	max-width: 60%;
-	font-size: 4rem;
+	font-size: 4rem !important;
 	font-weight: bold;
 	padding: 0.5rem;
-	background-color: rgba(255, 128, 0, 0.514);
+	background-color: var(--two);
 	opacity: 0;
 	animation: tituloApareciendo 3s forwards;
 }
 
 .heading-carousel-subtitle {
 	position: relative;
-	font-size: 2rem;
-	margin-top: 1rem;
+	margin-top: 1rem !important;
+	font-size: 1.5rem;
 	width: fit-content;
 	max-width: 80%;
 	padding: 0.5rem;
-	background-color: rgba(241, 241, 241, 0.627);
-	color: rgb(66, 66, 66);
+	background-color: var(--one);
+	color: var(--four);
 	opacity: 0;
 	animation: subtituloApareciendo 1s forwards 3s;
 }
@@ -103,7 +105,7 @@
 		transform: scale(1.1);
 	}
 	100% {
-		opacity: 1;
+		opacity: 0.8;
 	}
 }
 
@@ -118,7 +120,7 @@
 		transform: translate(-50%, -50%);
 	}
 	100% {
-		opacity: 0.8;
+		opacity: 0.9;
 		transform: scale(1);
 		transform: translate(-50%, -50%);
 
@@ -141,7 +143,7 @@
 		opacity: 0;
 	}
 	to {
-		opacity: 1;
+		opacity: 0.9;
 	}
 }
 
@@ -154,20 +156,30 @@
 	}
 
 	.heading-carousel-title {
-		min-width: 90%;
+		min-width: 80%;
 		max-width: auto;
-		padding: 5rem 2rem;
-		height: 20rem;
-		font-size: 1.6rem;
+		max-height: 8rem;
+		padding: 1rem 1rem;
+		height: 15rem;
+		font-size: 1.2rem;
+		margin-left: 1.5rem;
 	}
+
 	.heading-carousel-subtitle {
-		margin-top: 0rem;
-		font-size: 1.15rem;
+		height: 4rem;
+		font-size: 14px !important;
+		margin-left: 1.5rem;
 	}
 
 	.heading-carousel {
 		margin: 10%;
 		left: 0rem;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.heading-carousel-title {
+		font-size: 1.8rem !important;
 	}
 }
 </style>
@@ -177,7 +189,6 @@
 <script>
 import gsap from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'; // Import the ScrollToPlugin
-
 
 // Register the plugin
 gsap.registerPlugin(ScrollToPlugin);
@@ -213,7 +224,7 @@ export default {
 			// smoother.scrollTo(segundoElemento)
 			gsap.to(window, {
 				duration: 0.7,
-				scrollTo: { y: "#segundoElementoHtml" },
+				scrollTo: { y: "#segundoElementoHtml", offsetY: 80 },
 			})
 		}	
 	}
