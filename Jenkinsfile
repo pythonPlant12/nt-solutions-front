@@ -23,5 +23,17 @@ pipeline {
                 
             }
         }
+        // post is to execute something after all builds are done
+        post {
+            always { // always means that it will be executed always, no matter if build failed or another issue happened
+                // For example here I can send an email if the build is done or failed...
+            }
+            success {
+                // Something to do on success build
+            }
+            failure {
+                // Something to do on failure build
+            }
+        }
     }
 }
